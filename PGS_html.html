@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyPGS</title>
+    <link rel="stylesheet" href="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\PGS_CSS.css">
+</head>
+<body>
+    <div class="header-container">
+        <img src="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\Images\Pegasus_Airlines_logo.svg" alt="Logo" class="small-image">
+        <div class="nav-items">
+            <a href="#">Campaigns</a>
+            <a href="#">Manage My Booking</a>
+            <div class="dropdown">
+                <a href="#">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                </div>
+            </div>
+            <a href="#">BolBol</a>
+            <a href="#">Contact Us</a>
+            <div class="dropdown">
+                <a href="#">More</a>
+                <div class="dropdown-content">
+                    <a href="#">More 1</a>
+                    <a href="#">More 2</a>
+                </div>
+        </div>
+    </div>
+        <div class="right-items">
+            <button>Search</button>
+            <button>BolBol Member Login</button>
+            <select>
+                <option value="en">EN</option>
+                <option value="tr">TR</option>
+                <!-- Add more languages here -->
+            </select>
+        </div>
+    </div>
+    <header>
+        <!-- Add your header content here -->
+    </header>
+
+    <main>
+        <!-- Add your main content here -->
+        <div class="Welcoming-Message">  
+            <h1>Welcome to FlyPGS</h1>
+            <p>Book your flight now!</p>
+        
+        <form action="search.php" method="post">
+            <label for="from">From:</label>
+            <input type="text" name="from" id="from" required>
+            <label for="to">To:</label>
+            <input type="text" name="to" id="to" required>
+            <!-- Departure Date input and Return Date for the flight date -->
+            <label for="departure">Departure Date:</label>
+            <input type="date" name="departure" id="departure" required>
+            <label for="return">Return Date:</label>
+            <input type="date" name="return" id="return">
+            <!-- Dropdown method add guests in the first drop adult 1/ second drop child(2-12 age) 0/ finally infant(0-2 age) -->
+            <label for="adult">Adult:</label>
+            <select name="adult" id="adult">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="child">Child:</label>
+            <select name="child" id="child">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <label for="infant">Infant:</label>
+            <select name="infant" id="infant">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+        </div>
+
+            <h2>Our Best Fares!</h2>
+            <label for="destination">Where Do You Want to Fly?</label>
+            <select name="destination" id="destination">
+                <option value="1">London</option>
+                <option value="2">Istanbul</option>
+                <option value="3">Adana</option>
+                <option value="4">Alanya - Gazipaşa</option>
+                <option value="5">Amsterdam</option>
+                <option value="6">Ankara</option>
+                <option value="7">Antalya</option>
+                <option value="8">Athens</option>
+                <option value="9">Basel</option>
+                <option value="10">Batman</option>
+            </select>
+            <div class="card-container">
+                <div class="card">
+                    <img src="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\Images\London.jpeg" alt="London" class="small-image">
+                    <p>London</p>
+                    <p>April 2024</p>
+                    <button>70€ Prices starting from</button>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\Images\Istanbul.jpg" alt="Istanbul" class="small-image">
+                    <p>Istanbul</p>
+                    <p>April 2024</p>
+                    <button>600₺ Prices starting from</button>
+                </div>
+                <div class="card">
+                    <img src="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\Images\Izmir.jpg" alt="Izmir" class="small-image">
+                    <p>Izmir</p>
+                    <p>April 2024</p>
+                    <button>800₺ Prices starting from</button>
+                </div>
+            </div>
+            <!-- Add extra services -->
+            <div class="extra-services">
+                <h2>Add Extra Services</h2>
+                <span>
+                    <label for="Pre-Order Meal">Meal:</label>
+                    <select name="meal" id="meal">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                <span>
+                    <label for="Select Your Seat">Seat:</label>
+                    <select name="seat" id="seat">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                <span>
+                    <label for="Additional Baggage">Baggage:</label>
+                    <select name="baggage" id="baggage">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+                
+                <span>
+                    <label for="Car Rental">Car Rental:</label>
+                    <select name="car" id="car">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                <span>
+                    <label for="HOTELS.COM & AIRBNB">Hotel:</label>
+                    <select name="hotel" id="hotel">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                <span>
+                    <label for="PEGASUS FLEX">Flex:</label>
+                    <select name="flex" id="flex">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                <span>
+                    <label for="PARKING">Parking:</label>
+                    <select name="parking" id="parking">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                <span>
+
+                </span>
+                    <label for="PEGASUS GIFT CARD">Gift Card:</label>
+                    <select name="gift" id="gift">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </span>
+                
+                <span>
+                    <label for="TRAVEL INSURANCE">Insurance:</label>
+                    <select name="insurance" id="insurance">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </span>
+
+                <span>
+                    <label for="TOURS & ACTIVITIES">Tours:</label>
+                    <select name="tours" id="tours">
+                        <option value="0">No</option>
+                        <option value="1">Yes</option>
+                    </select>
+                </span>
+            </div>
+        
+
+        <div class="app-download-container">
+            <h2>Download the Pegasus Mobile App Now!</h2>
+            <p>Get our app for the best flight booking experience.</p>
+            <a href="_blank" target="_blank">Download on Google Play</a>
+            <a href="_blank" target="_blank">Download on the App Store</a>
+        </div> 
+
+        <div class="container">
+            <!-- Calendar/Chart View -->
+            <div class="box calendar-view">
+                <h2>Calendar/Chart View</h2>
+                <p>If your travel date is flexible, easily find the cheapest flight tickets using the calendar/chart view. Make your decision faster by looking at the best prices on each days of that month on a single screen.</p>
+            </div>
+        
+            <!-- Don't Miss These Offers! -->
+            <div class="box offers">
+                <h2>Don't Miss These Offers!</h2>
+                <p>By keeping an eye on the special deals offered throughout the year, you can buy cheap tickets, earn more BolPoints or take advantage of my other services such as seat and meal selection.</p>
+            </div>
+        
+            <!-- Mobile App -->
+            <div class="box mobile-app">
+                <h2>Mobile App</h2>
+                <p>Download our mobile app free of charge, and you can buy flight tickets at any time and easily manage all the steps of your journey from a single screen.</p>
+            </div>
+        
+            <!-- Fly with BolPoints -->
+            <div class="box bolpoints">
+                <h2>Fly with BolPoints</h2>
+                <p>As a BolBol member, you'll earn BolPoints from flights and from our partners. With enough BolPoint, your next flight ticket could be free.</p>
+            </div>
+        </div>
+
+        <div class="destinations">
+            <h2>Fly to 130 destinations in 49 countries with Pegasus Airlines</h2>
+            <div class="destination-list">
+                <h3>TÜRKİYE</h3>
+                <ul class="grid">
+                    <li>Adana</li>
+                    <li>Agri</li>
+                    <li>Alanya - Gazipaşa</li>
+                    <li>Ankara</li>
+                    <li>Antalya</li>
+                    <li>Batman</li>
+                    <li>Bingol</li>
+                    <li>Bodrum - Mugla</li>
+                    <li>Corlu - Tekirdag</li>
+                    <li>Dalaman - Mugla</li>
+                    <li>Denizli</li>
+                    <li>Diyarbakir</li>
+                    <li>Edremit - Balikesir</li>
+                    <li>Elazig</li>
+                    <li>Erzincan</li>
+                    <li>Erzurum</li>
+                    <li>Gaziantep</li>
+                    <li>Hatay</li>
+                    <li>Hopa - Artvin </li>
+                    <li>Igdir</li>
+                    <li>Istanbul</li>
+                    <li>Izmir</li>
+                    <li>Kahramanmaras</li>
+                    <li>Kars</li>
+                    <li>Kayseri</li>
+                    <li>Konya</li>
+                    <li>Kütahya</li>
+                    <li>Malatya</li>
+                    <li>Mardin</li>
+                    <li>Merzifon - Amasya</li>
+                    <li>Mus</li>
+                    <li>Ordu</li>
+                    <li>Rize</li>
+                    <li>Samsun</li>
+                    <li>Sanliurfa</li>
+                    <li>Sinop</li>
+                    <li>Sivas</li>
+                    <li>Trabzon</li>
+                    <li>Van</li>
+                </ul>
+            </div>
+            <!-- You can add similar blocks for EUROPE, ASIA, and AFRICA here -->  
+        </div>
+
+       
+        <div class="container">
+            <!-- Announcements -->
+            <div class="box announcements">
+                <h2>Announcements</h2>
+                <ul>
+                    <li>Information About Cancelled Flights for 18th - 19th of Nov 2023</li>
+                    <li>Important Notice About Israel Flights</li>
+                    <li>Information About Cancelled Flights for February 29</li>
+                    <li>Additional Rights Offered in Ticket Transactions for Israel Flights</li>
+                </ul>
+                <a href="#">SHOW ALL</a>
+            </div>
+
+            <!-- Press Room -->
+            <div class="box press-room">
+                <h2>Press Room</h2>
+                <ul>
+                    <li>Pegasus and TEV to Provide University Scholarships for 1,000 Female Students</li>
+                    <li>Leadership Award for Pegasus Airlines’ CEO at Aviation Week Network’s 66th Laureate Awards</li>
+                    <li>Pegasus Airlines Receives Two Awards for Youngest Fleet</li>
+                    <li>Pegasus Airlines is establishing Silicon Valley-based Technology Innovation Lab</li>
+                </ul>
+                <a href="#">SHOW ALL</a>
+            </div>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item1">
+                <label for="item1">How do I find cheap flights?</label>
+                <div class="answer">If your travel dates are flexible and you want to find the cheapest ticket, follow these steps:
+                    Don't leave reservations to the last minute.
+                    Try to book your reservations as early as possible.
+                    If you're not sure about your travel dates, fix the price of cheap flight tickets you've found.
+                    Keep an eye on Pegasus' special offers.
+                    Keep an eye on seasonal introductory offers.
+                    Try not to travel at weekends and during public holidays.
+                    Travel outside of peak season.</div>
+            </div>
+            <!-- Add more questions and answers here Why choose Pegasus for cheap flight ticket reservation?-->
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item2">
+                <label for="item2">Why choose Pegasus for cheap flight ticket reservation?</label>
+                <div class="answer">PPegasus Airlines is a low-cost airline based in Turkey that offers affordable flight options to a variety of destinations throughout Europe, the Middle East, and Asia. Here are some reasons why you might choose Pegasus for your cheap flight ticket reservation:
+                    Low fares: Pegasus offers some of the lowest fares available for air travel, making it an attractive option for budget-conscious travelers.                  
+                    Extensive route network: Pegasus operates flights to more than 100 destinations in over 40 countries, making it a convenient choice for travelers who want to explore a variety of destinations.              
+                    Easy booking process: Pegasus offers an easy-to-use online booking system that allows you to search and compare fares, select your preferred flights, and complete your reservation quickly and easily.                 
+                    Frequent Flyer Program: Pegasus has a frequent flyer program called Pegasus BolBol, which allows you to earn and redeem points for flights, seat upgrades, and other benefits.                 
+                    Flexibility: Pegasus offers a range of fare options, including basic, standard, and flexible fares, to suit different travel needs and budgets.                   
+                    While there may be other airlines that offer low fares and competitive pricing, Pegasus has built a strong reputation for its affordability and extensive route network, making it a popular choice for travelers looking for cheap flight ticket reservations.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item3">       
+                <label for="item3">How do I purchase a cheap flight ticket with Pegasus?</label>
+                <div class="answer">Buying cheap flight tickets with Pegasus Airlines is really simple. Just enter the destination you're travelling to at flypgs.com or on the mobile app to list available flights, then choose the cheapest flight on the date that suits you.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item4">
+                <label for="item4">How to reserve plane tickets online?</label>
+                <div class="answer">To make an online flight reservation over the internet, sign in at www.flypgs.com/en or download the Pegasus mobile app on your mobile device.
+                    Then, create a list of available flights by entering your points of departure and arrival, and your travel dates. Select your flight, make any additional selections and enter your information. Then you can reserve your ticket securely.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item5">
+                <label for="item5">What is the best day of the week to buy plane tickets?</label>
+                <div class="answer">There is no one "best" day of the week to buy plane tickets that applies universally to all airlines and routes. However, there are some general trends and tips that may be helpful in finding cheaper flights:
+                    Book in advance: Generally, the earlier you book your flight, the more likely you are to get a better price.                   
+                    Avoid peak travel times: Flights during holidays and weekends tend to be more expensive. Instead, consider traveling during off-peak times, such as midweek.
+                    Be flexible with your travel dates: Sometimes, shifting your travel dates by a day or two can make a significant difference in price. 
+                    Set up price alerts: Many travel websites and airlines offer price alert services that will notify you when the price of a particular flight changes. 
+                    Consider alternative airports: Sometimes, flying into or out of a smaller airport near your destination can be less expensive.                
+                    Ultimately, the best day to buy plane tickets will vary based on the specific route, and timing of your travel plans. It's a good idea to do some research and compare prices across multiple dates to find the best deal for your specific needs.
+                </div>
+            </div>
+            <div class="accordion-item">
+                <input type="radio" name="accordion" id="item6">
+                <label for="item6">Is it cheaper to book flights at the last minute?</label>
+                <div class="answer">Contrary to popular belief, booking flights at the last minute is not necessarily cheaper. In fact, it can often be more expensive, especially during peak travel times when demand for flights is high.
+                    Pegasus Airlines use dynamic pricing, which means that the price of a flight can fluctuate based on factors such as demand, time of year, and available seats. When you book a flight at the last minute, you're often competing with other travelers who are also looking to book seats on the same flight. This increased demand can cause prices to rise.               
+                    In addition, Pegasus Airlines may sometimes offer discounts for booking in advance, as it helps them to better manage their capacity and plan for the number of passengers on a particular flight.                 
+                    That being said, it's generally best to book your flight as far in advance as possible to secure the best price.
+                </div>
+            </div>
+    </div>
+        <div class="content">
+            <h2>Flight Ticket Prices Suitable for Your Budget at Pegasus!</h2>
+            <p>Flight ticket booking is easy, fast and cost-effective for Pegasus Airlines customers.</p>
+            <p>Are you looking for flight tickets to popular destinations in Europe? Do you need to connect your flights to domestic hubs? Take a glance at our budget-saving tips on how to find cheap flight tickets to your travel route.</p>
+            <p>You can start with a few clicks on Pegasus website: Choose your traveling dates, scroll down to find your departure and arrival airports and press the ¨search cheap flights¨ button. 
+            If you have a flexible schedule, do not hesitate to look around for the cheapest flights within the same week.</p>
+            <p>There is even a faster option to get the most affordable ticket prices! Download Pegasus app to your mobile to get airline promotions. 
+            Keep notified of last-minute discounts on plane tickets on charming routes. You can always experience a dream holiday with the benefits of Pegasus alternatives.</p>
+            <p>Do not forget to activate your Pegasus membership to earn BolBol credits. How can you book flights by BolPoints? You will certainly save more and more points by getting your plane tickets via Pegasus offers.
+            In return, you can book a flight at a much lower cost spending those credits.</p>
+            <p>Keep any eye on international flights from Sabiha Gökçen Airport in Istanbul. Pegasus passengers know that cheap airlines prefer the busiest international hub 
+            on the Asian side of Istanbul for better flight connections. Explore other top reasons to book flight to Istanbul following Pegasus travel guides.
+            Either for business or leisure, plan your trip with Pegasus advantages to book flight tickets at most affordable rates.</p>
+        </div>  
+        <div class="footer-bottom-container">
+            <div class="footer-links">
+                <div>
+                    <a href="#">About Pegasus</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Pegasus Cargo</a>
+                    <a href="#">Press Room</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Frequently Asked Questions</a>
+                    <a href="#">flypgs.com Magazine</a>
+                    <a href="#">Careers</a>
+                </div>
+                <div>
+                    <a href="#">Site Map</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Compatibility</a>
+                    <a href="#">Passenger Rights</a>
+                    <a href="#">Transaction Guide</a>
+                </div>
+                <div>
+                    <a href="#">Investor Relations</a>
+                </div>
+            </div>
+            <form class="footer-form">
+                <p>Sign up for our e-mails so you can be the first to hear about the campaigns.</p>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <input type="text" id="surname" name="surname" placeholder="Your surname">
+                <input type="email" id="email" name="email" placeholder="Your email address">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </main>
+        <footer>
+            <div class="footer-end-container">
+                <img src="C:\Users\birol\OneDrive\Masaüstü\Değişik\Dersler\3.Sınıf\2.Dönem\Web Programlama\Homework\Images\Pegasus_Airlines_logo.svg" alt="Logo" class="small-image">
+                <div class="footer-end-text">
+                    Pegasus Hava Taşımacılığı Anonim Şirketi is a joint-stock company operating under the laws of the Republic of Türkiye. Headquarters address: Aeropark, Yenişehir Mah. Osmanlı Bul. No: 11/A Kurtköy 34912 Pendik – Istanbul/TÜRKİYE. © 2005 - 2024
+                </div>
+                <div class="app-links">
+                    <a href="#">App Gallery</a>
+                    <a href="#">App Store</a>
+                    <a href="#">Play Store</a>
+                </div>
+            </div>
+        </footer>
+        
+        
+</body>
+    </html>
